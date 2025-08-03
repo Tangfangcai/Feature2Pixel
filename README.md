@@ -1,6 +1,6 @@
 # Feature2Pixel
 
-一个用于图像特征到图像像素转换的深度学习项目。
+一个零样本去噪方法。
 
 ## 🔧 环境配置
 
@@ -19,7 +19,7 @@ cd Feature2Pixel-main
 pip install -r requirements.txt
 ```
 ✅ 安装 PyTorch（必选）
-请根据你电脑的 CUDA 版本或是否使用 GPU，访问 https://pytorch.org/，选择适合你的配置并复制相应的安装命令。
+请根据你电脑的 CUDA 版本或是否使用 GPU，访问 https://pytorch.org/ ，选择适合你的配置并复制相应的安装命令。
 例如，如果你使用的是 Linux + CUDA 11.8 + pip，可以执行：
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
@@ -27,7 +27,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 
 ## 🚀 快速开始
 
-确保你已经准备好了数据集（如 Kodak24），然后运行以下命令开始训练：
+运行以下命令开始：
 
 ```bash
 mkdir log  # 若没有 log 文件夹，需手动创建
@@ -70,9 +70,6 @@ Feature2Pixel-main/
 ## 📧 联系方式
 
 如有问题，请提交 Issue
-
-
-
 
 
 
