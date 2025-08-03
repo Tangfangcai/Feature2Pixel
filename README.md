@@ -10,30 +10,6 @@
 conda create -n F2P python=3.9
 conda activate F2P
 
-当然可以，下面是完整的 `README.md` 内容，已使用 Markdown 格式排版，适合直接复制粘贴进你的 GitHub 项目中：
-
-````markdown
-# Feature2Pixel
-
-Feature2Pixel 是一个零样本单幅图像去噪框架，完全基于自监督，不依赖干净图像或噪声先验，只使用输入的噪声图像完成训练，适用于真实世界图像去噪场景。
-
-## 🌟 特点
-
-- 无需干净图像或噪声分布假设
-- 基于局部相似性的像素银行机制
-- 自监督伪标签构建
-- 支持真实图像与合成噪声图像
-- 高性能、可部署
-
-## 📦 安装方法
-
-建议使用 Conda 管理 Python 环境：
-
-```bash
-conda create -n F2P python=3.9
-conda activate F2P
-````
-
 克隆本仓库并安装依赖：
 
 ```bash
@@ -85,20 +61,14 @@ Feature2Pixel-main/
 
 ## 🔗 项目主页与代码
 
-项目主页：[GitHub - Feature2Pixel](https://github.com/Tangfangcai/Pixel-Feature-is-All-You-Need)
+项目主页：[GitHub - Feature2Pixel](https://github.com/Tangfangcai/Feature2Pixel)
 
-欢迎 star⭐ 和 fork🍴！
 
 ## 📧 联系方式
 
-如有问题，请提交 Issue 或联系作者邮箱：
+如有问题，请提交 Issue
 
-📬 tangfangcai \[at] yourdomain \[dot] com
 
-```
-
-如果你之后想加入训练结果图、模型结构图、运行示例图等，我也可以帮你补充图文 Markdown。是否需要我再帮你加一个论文摘要介绍部分？
-```
 
 
 
