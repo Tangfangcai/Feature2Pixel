@@ -9,6 +9,7 @@
 ```bash
 conda create -n F2P python=3.9
 conda activate F2P
+```
 
 克隆本仓库并安装依赖：
 
@@ -17,6 +18,12 @@ git clone https://github.com/yourusername/Feature2Pixel-main.git
 cd Feature2Pixel-main
 pip install -r requirements.txt
 ```
+✅ 安装 PyTorch（必选）
+请根据你电脑的 CUDA 版本或是否使用 GPU，访问 https://pytorch.org/，选择适合你的配置并复制相应的安装命令。
+例如，如果你使用的是 Linux + CUDA 11.8 + pip，可以执行：
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 
 ## 🚀 快速开始
 
@@ -24,40 +31,36 @@ pip install -r requirements.txt
 
 ```bash
 mkdir log  # 若没有 log 文件夹，需手动创建
-python Feature2Pixel_syn.py
+python Feature2Pixel_real.py  #真实噪声
+python Feature2Pixel_syn.py  #合成噪声
 ```
 
-你可以根据自己的需求在 `Feature2Pixel_syn.py` 中修改数据路径和参数设置。
+你可以根据自己的需求在 `Feature2Pixel_syn.py、Feature2Pixel_syn.py` 中修改数据路径和参数设置。
 
-## 📁 项目结构
 
-```
-Feature2Pixel-main/
-├── Feature2Pixel_syn.py         # 主程序（合成噪声实验）
-├── models/                      # 模型模块（特征提取与图像恢复网络）
-├── utils.py                     # 工具函数（如Logger、图像可视化等）
-├── options/                     # 参数设置模块
-├── datasets/                    # 数据集预处理与加载模块
-├── requirements.txt             # 所需依赖库
-└── README.md                    # 本文件
-```
 
 ## 🧪 数据集说明
 
-你可以使用以下数据集进行训练与评估：
+你可以使用以下数据集进行训练与评估：在data 文件夹中创建你的数据集文件夹。数据集文件夹应包含两个子文件夹：GT 和 Noisy，分别存储干净图像和噪声图像。
 
-* **Kodak24**
-* **BSD68**
-* **Urban100**
-* 或你自己的图像数据集
+```
+Feature2Pixel-main/
+└──  data 
+    └──  your_dataset_name
+        ├──  GT
+            ├── pic1.png
+            └── pic2.png
+        └──  Noisy
+            ├── pic1.png
+            └── pic2.png
+```
 
-示例路径：`/yourpath/dataset/Kodak24_c256_noisy/gauss_nl50/kodim04.png`
 
 ## 🖼️ 输出与评估
 
 * 图像保存路径可在脚本中设置
 * 默认输出图像、日志文件（保存在 `log/` 文件夹）
-* 支持 PSNR / SSIM 评估指标（需要你集成或添加代码）
+* 支持 PSNR / SSIM 评估指标
 
 ## 🔗 项目主页与代码
 
