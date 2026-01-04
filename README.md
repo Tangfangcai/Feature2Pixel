@@ -4,7 +4,7 @@
 
 ## 🔧 环境配置
 
-建议使用 [Anaconda]或者[miniconda](https://www.anaconda.com)来管理环境：
+建议使用[Anaconda]或者[miniconda] (https://www.anaconda.com)来管理环境：
 
 ```bash
 conda create -n F2P python=3.9
