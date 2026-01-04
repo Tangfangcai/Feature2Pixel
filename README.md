@@ -2,6 +2,9 @@
 
 一个零样本去噪方法。
 
+## 📝 TODO
+- [ ] 上传完整PixelFeatureMap.py代码
+
 ## 🔧 环境配置
 
 建议使用[Anaconda]或者[miniconda] (https://www.anaconda.com) 来管理环境：
@@ -36,7 +39,6 @@ python Feature2Pixel_real.py
 你可以根据自己的需求在 `Feature2Pixel_syn.py` 中修改数据路径和参数设置。
 
 
-
 ## 🧪 数据集说明
 
 你可以使用以下数据集进行训练与评估：在data 文件夹中创建你的数据集文件夹。数据集文件夹应包含两个子文件夹：GT 和 Noisy，分别存储干净图像和噪声图像。
@@ -68,11 +70,6 @@ Feature2Pixel-main/
 ## 📧 联系方式
 
 如有问题，请提交 Issue
-
-## 📝 TODO
-
-- [ ] 上传完整PixelFeatureMap.py代码
-
 
 
 本项目采用 [CC BY-NC-SA 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。  
