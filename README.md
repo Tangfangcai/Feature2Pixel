@@ -4,7 +4,7 @@
 
 ## 🔧 环境配置
 
-建议使用 [Anaconda]]https://www.anaconda.com/) 来管理环境：
+建议使用 [Anaconda]或者[miniconda](https://www.anaconda.com)来管理环境：
 
 ```bash
 conda create -n F2P python=3.9
@@ -14,7 +14,7 @@ conda activate F2P
 克隆本仓库并安装依赖：
 
 ```bash
-git clone https://github.com/yourusername/Feature2Pixel.git
+git clone https://github.com/tangfangcai/Feature2Pixel.git
 cd Feature2Pixel
 pip install -r requirements.txt
 ```
