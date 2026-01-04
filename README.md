@@ -4,7 +4,7 @@
 
 ## 🔧 环境配置
 
-建议使用 [Anaconda](https://www.anaconda.com/) 来管理环境：
+建议使用 [Anaconda]]https://www.anaconda.com/) 来管理环境：
 
 ```bash
 conda create -n F2P python=3.9
@@ -14,8 +14,8 @@ conda activate F2P
 克隆本仓库并安装依赖：
 
 ```bash
-git clone https://github.com/yourusername/Feature2Pixel-main.git
-cd Feature2Pixel-main
+git clone https://github.com/yourusername/Feature2Pixel.git
+cd Feature2Pixel
 pip install -r requirements.txt
 ```
 ✅ 安装 PyTorch（必选）
@@ -30,12 +30,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 运行以下命令开始：
 
 ```bash
-mkdir log  # 若没有 log 文件夹，需手动创建
-python Feature2Pixel_real.py  #真实噪声
-python Feature2Pixel_syn.py  #合成噪声
+python Feature2Pixel_real.py
 ```
 
-你可以根据自己的需求在 `Feature2Pixel_syn.py、Feature2Pixel_syn.py` 中修改数据路径和参数设置。
+你可以根据自己的需求在 `Feature2Pixel_syn.py` 中修改数据路径和参数设置。
 
 
 
